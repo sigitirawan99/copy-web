@@ -4,9 +4,9 @@ import { Button } from "./ui/button";
 
 const HeroSection = () => {
   return (
-    <div className="h-dvh">
+    <div className="h-dvh w-full">
       <div className="flex justify-around items-center h-full">
-        <div className="ml-15">
+        <div className="">
           <p className="font-semibold bg-gray-100 p-2 rounded-md text-sm w-70">
             🔥 Pilih Layanan Cloud Hosting Terbaik
           </p>
@@ -47,7 +47,7 @@ const HeroSection = () => {
             </ul>
           </div>
           <div className="mt-20 ml-1 flex gap-9 items-center">
-            <Button className="px-7 py-7 rounded-3xl text-md bg-green-700 cursor-pointer hover:bg-green-800">
+            <Button className="px-7 py-7 rounded-3xl text-md bg-green-700 cursor-pointer hover:bg-green-700 text-white">
               Beli Cloud Web Hosting
             </Button>
             <div className="font-medium">

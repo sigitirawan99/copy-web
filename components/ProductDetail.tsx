@@ -5,13 +5,13 @@ const ProductDetail = ({ title }: { title: string }) => {
   return (
     <div>
       <div className="w-80 mt-8">
-        <div className="border rounded-3xl bg-blue-400 h-25 -mb-4 relative z-0">
+        <div className="border border-blue-400 rounded-3xl bg-blue-400 h-25 -mb-4 relative z-0">
           <h1 className="text-4xl font-bold text-white mt-3">{title}</h1>
           <div className="bg-white w-35 rounded-md mx-auto text-black">
             STORAGE <span className="font-extrabold">3GB</span>
           </div>
         </div>
-        <div className="border rounded-3xl">
+        <div className="border rounded-3xl border-gray-300">
           <div className="mt-12 mx-auto w-60">
             <div className="text-justify">
               <p className="font-semibold  mb-16 ">
@@ -91,7 +91,7 @@ const ProductDetail = ({ title }: { title: string }) => {
               </ul>
             </div>
           </div>
-          <button className="mb-20 mt-10 font-semibold text-gray-400 cursor-pointer">
+          <button className="mb-10 mt-10 font-semibold text-gray-400 cursor-pointer">
             Lihat Fitur Lainya{" "}
           </button>
         </div>

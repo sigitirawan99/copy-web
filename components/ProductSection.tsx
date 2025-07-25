@@ -23,12 +23,12 @@ const ProductSection = () => {
       </p>
 
       <div className="flex p-10 gap-1 justify-center">
-        <div className="border-2 flex gap-1 p-1 rounded-xl">
+        <div className="border-1 flex gap-1 p-1 rounded-xl border-gray-300">
           <Button
             onClick={() => setActiveButton("personal")}
             className={`p-6 font-black rounded-xl flex items-center gap-2 ${
               activeButton === "personal"
-                ? "bg-blue-500 text-white cursor-pointer hover:bg-blue-500 "
+                ? "bg-blue-500 text-white cursor-pointer hover:bg-blue-500"
                 : "bg-gray-50 text-black cursor-pointer hover:bg-gray-50 shadow-none"
             }`}
           >
@@ -49,12 +49,21 @@ const ProductSection = () => {
           </Button>
         </div>
       </div>
-      <div className="flex justify-center gap-5">
-        <ProductDetail title="Scout" />
-        <ProductDetail title="Hunter" />
-        <ProductDetail title="Warrior" />
-        <ProductDetail title="Guardian" />
-      </div>
+      {activeButton === "personal" && (
+        <div className="flex justify-center gap-5">
+          <ProductDetail title="Scout" />
+          <ProductDetail title="Hunter" />
+          <ProductDetail title="Warrior" />
+          <ProductDetail title="Guardian" />
+        </div>
+      )}
+      {activeButton === "corporate" && (
+        <div className="flex justify-center gap-5">
+          <ProductDetail title="Crusader" />
+          <ProductDetail title="Paladin" />
+          <ProductDetail title="Oracle" />
+        </div>
+      )}
     </div>
   );
 };
