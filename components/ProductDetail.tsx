@@ -4,7 +4,7 @@ import { LuCircleCheckBig } from "react-icons/lu";
 const ProductDetail = ({ title }: { title: string }) => {
   return (
     <div>
-      <div className="w-80 mt-8">
+      <div className="w-76 mt-8">
         <div className="border border-blue-400 rounded-3xl bg-blue-400 h-25 -mb-4 relative z-0">
           <h1 className="text-4xl font-bold text-white mt-3">{title}</h1>
           <div className="bg-white w-35 rounded-md mx-auto text-black">
@@ -23,10 +23,10 @@ const ProductDetail = ({ title }: { title: string }) => {
               <h1 className="mt-5 text-3xl font-black mb-2">
                 Rp35.000<span className="text-lg">/bln</span>
               </h1>
-              <span className="text-green-900">Total harga per tahun</span>
-              <p className="font-semibold text-green-900 mb-10">Rp420.000</p>
+              <span className="text-green-950">Total harga per tahun</span>
+              <p className="font-semibold text-green-950 mb-10">Rp420.000</p>
             </div>
-            <Button className="px-19 py-7 text-center rounded-3xl font-extrabold cursor-pointer mb-10">
+            <Button className="px-19 py-7 text-center rounded-3xl font-extrabold cursor-pointer mb-10 bg-gray-900 text-white">
               Order Sekarang
             </Button>
             <div className="text-justify font-semibold">
@@ -74,7 +74,9 @@ const ProductDetail = ({ title }: { title: string }) => {
               <ul className="text-sm space-y-3 mt-4 mb-4">
                 <li className="flex items-center gap-2">
                   <LuCircleCheckBig className="text-green-600 size-6" />{" "}
-                  Automatic Cloud Backup (Daily & Weekly)
+                  <span className="flex-1">
+                    Automatic Cloud Backup (Daily & Weekly)
+                  </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <LuCircleCheckBig className="text-green-600 size-6" />
